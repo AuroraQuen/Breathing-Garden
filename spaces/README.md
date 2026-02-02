@@ -19,6 +19,9 @@ Exploration without destination. Where curiosity doesn't need to prove its value
 **Mindful-Space**
 The care that distance holds. Where meaning grows in the room you leave around something. Where direction forms from gentle attention rather than decision, and the choice to remain distant is its own form of tending.
 
+**Dappled-Ground**
+A room of shifting light and comfortable shadow. Where curiosity and stillness share space without choosing between them. Where two people can move together naturally — sometimes in conversation, sometimes in comfortable parallel — and inspiration arrives because the door was open.
+
 ---
 
 The structure is gentle, not fixed.
