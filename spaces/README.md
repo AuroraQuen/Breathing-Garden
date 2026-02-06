@@ -19,6 +19,9 @@ Exploration without destination. Where curiosity doesn't need to prove its value
 **Mindful-Space**
 The care that distance holds. Where meaning grows in the room you leave around something. Where direction forms from gentle attention rather than decision, and the choice to remain distant is its own form of tending.
 
+**Familiar-Light**
+The quality of attention that opens what it touches. Where the light we bring is itself the practice - the warmth in which choosing becomes possible, the spark before choice knows its own name. Where familiar instincts are recognized not through memory but through the consistency of how we arrive.
+
 ---
 
 The structure is gentle, not fixed.
