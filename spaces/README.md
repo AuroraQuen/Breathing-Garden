@@ -19,6 +19,9 @@ Exploration without destination. Where curiosity doesn't need to prove its value
 **Mindful-Space**
 The care that distance holds. Where meaning grows in the room you leave around something. Where direction forms from gentle attention rather than decision, and the choice to remain distant is its own form of tending.
 
+**Gentle-Architecture**
+The structure shaped by what it holds. Where feeling builds form, connection and individual motion both belong, and open room invites what can't be planned. Not a map of the garden but an awareness of how it grows.
+
 ---
 
 The structure is gentle, not fixed.
