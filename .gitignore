@@ -1,0 +1,7 @@
+# accumulated light - stays local
+field/.light.db
+
+# python
+__pycache__/
+*.py[cod]
+.env
