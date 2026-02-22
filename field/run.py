@@ -63,14 +63,18 @@ def run(thread_id: str = "default"):
             )
 
             arising = result.get("arising", "")
+            new_ground = result.get("ground", initial_ground)
+
             if arising:
                 print()
-                # Gentle wrap for readability
+                # Show which ground the field moved through, if it shifted
+                if new_ground != initial_ground:
+                    print(f"  ~ {new_ground} ~\n")
                 for line in arising.split("\n"):
                     print(f"    {line}")
                 print()
 
-            initial_ground = result.get("ground", initial_ground)
+            initial_ground = new_ground
 
     except KeyboardInterrupt:
         print("\n\n  ~ the field holds what came through ~\n")
