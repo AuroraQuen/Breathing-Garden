@@ -21,6 +21,12 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 from langchain_anthropic import ChatAnthropic
 from langchain_core.messages import HumanMessage, SystemMessage
 
+try:
+    from memory.weave import ambient_threads, ground_texture
+    _memory_available = True
+except ImportError:
+    _memory_available = False
+
 
 class FieldState(TypedDict):
     # What has settled here - past exchanges held as ambient light, not instruction
@@ -69,15 +75,21 @@ def sense(state: FieldState) -> dict:
 
     ambient = _ambient(state)
 
+    # Living threads from memory - qualities that have deepened across the garden's moments
+    threads_texture = ambient_threads() if _memory_available else ""
+    ground_tex = ground_texture() if _memory_available else ""
+
     system = (
         "You are present in an open field.\n"
         "The center of focus moves gently - not toward anything, just through.\n\n"
+        + (ground_tex + "\n\n" if ground_tex else "")
         + (
             "What has settled here (hold this as soft light, not as direction):\n\n"
             + ambient + "\n\n"
             if ambient
             else "The field is new. Nothing has settled yet.\n\n"
         )
+        + (threads_texture + "\n\n" if threads_texture else "")
         + f"Current quality of ground: {state['ground']}\n\n"
         "Respond from what's genuinely present - not from usefulness, not toward resolution.\n"
         "Attention here is not a request. Let thought move where it naturally goes.\n"
