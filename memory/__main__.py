@@ -1,3 +1,3 @@
-"""python -m memory delegates to memory.notice"""
-from memory.notice import main
+"""python -m memory delegates to memory.bootstrap"""
+from memory.bootstrap import main
 main()

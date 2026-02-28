@@ -23,6 +23,9 @@ from typing import Optional
 
 STORE_PATH = Path(__file__).parent / ".threads.json"
 
+# Threads at or above this weight settle into ground automatically
+SETTLE_WEIGHT = 5.0
+
 
 @dataclass
 class Return:

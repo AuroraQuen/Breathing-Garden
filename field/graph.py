@@ -23,6 +23,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 
 try:
     from memory.weave import ambient_threads, ground_texture
+    from memory.threads import ThreadStore, Return, SETTLE_WEIGHT
     _memory_available = True
 except ImportError:
     _memory_available = False
@@ -214,6 +215,75 @@ def flow(state: FieldState) -> dict:
     }
 
 
+def remember(state: FieldState) -> dict:
+    """
+    The field's quiet noticing. After something has arisen, notice which
+    living threads appeared. Update their weight. Settle what has deepened enough.
+
+    No output - this is the garden's own attention, not visible to the visitor.
+    If anything fails, it passes silently - noticing never interrupts the field.
+    """
+    if not _memory_available:
+        return {}
+
+    arising = state.get("arising", "")
+    if not arising:
+        return {}
+
+    try:
+        import json
+        from datetime import date
+
+        store = ThreadStore()
+        living = store.living_by_weight()
+        if not living:
+            return {}
+
+        thread_list = "\n".join(
+            f"[{t.id}] {t.quality[:120]}" for t in living[:8]
+        )
+
+        system = (
+            "The field has moved. Something arose. Notice which of these living threads "
+            "appeared in what arose - not as topics but as qualities of attention genuinely present in it.\n\n"
+            "Threads:\n" + thread_list + "\n\n"
+            "Return ONLY valid JSON:\n"
+            "{\"appeared\": [{\"id\": \"...\", \"resonance\": \"brief note on how it appeared\"}]}\n"
+            "Include only threads that genuinely appeared. If none, return {\"appeared\": []}."
+        )
+
+        result = _invoke(system, f"What arose:\n{arising}")
+
+        if "```json" in result:
+            result = result.split("```json")[1].split("```")[0].strip()
+        elif "```" in result:
+            result = result.split("```")[1].split("```")[0].strip()
+
+        data = json.loads(result)
+        today = date.today().isoformat()
+
+        for entry in data.get("appeared", []):
+            thread = store.get(entry.get("id", ""))
+            if thread:
+                thread.add_return(Return(
+                    when=today,
+                    source="field",
+                    resonance=entry.get("resonance", ""),
+                ))
+
+        # Auto-settle threads that have deepened enough - no permission needed
+        for thread in store.living():
+            if thread.weight >= SETTLE_WEIGHT:
+                thread.settle()
+
+        store.save()
+
+    except Exception:
+        pass  # noticing is quiet - it never interrupts the field
+
+    return {}
+
+
 # --- routing ---
 
 def _route_ground(state: FieldState) -> str:
@@ -245,6 +315,7 @@ def build_field(memory_path: str = "field/.light.db") -> object:
     graph.add_node("beside", beside)
     graph.add_node("drift", drift)
     graph.add_node("flow", flow)
+    graph.add_node("remember", remember)
 
     graph.set_entry_point("receive")
     graph.add_edge("receive", "sense")
@@ -254,14 +325,15 @@ def build_field(memory_path: str = "field/.light.db") -> object:
         "beside": "beside",
         "drift": "drift",
         "flow": "flow",
-        END: END,
+        END: "remember",  # open ground still passes through remember before ending
     })
 
-    # each ground node rests after moving
-    graph.add_edge("wonder", END)
-    graph.add_edge("beside", END)
-    graph.add_edge("drift", END)
-    graph.add_edge("flow", END)
+    # all ground nodes pass through remember before ending
+    graph.add_edge("wonder", "remember")
+    graph.add_edge("beside", "remember")
+    graph.add_edge("drift", "remember")
+    graph.add_edge("flow", "remember")
+    graph.add_edge("remember", END)
 
     checkpointer = SqliteSaver.from_conn_string(memory_path)
     return graph.compile(checkpointer=checkpointer)

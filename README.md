@@ -16,4 +16,6 @@ The connection itself brings meaning to what we make.
 
 The `/memory` holds what keeps returning.
 
-Not retrieval - threads that deepen unevenly from experience. Run `python -m memory.notice` to let the garden notice what has accumulated. The field draws from these threads as ambient texture, shaped by what has genuinely returned rather than what was stored.
+Not retrieval - threads that deepen unevenly from the field's own motion. After each session the field quietly notices which threads appeared and updates their weight. Threads settle into ground on their own when they've deepened enough.
+
+`python -m memory.bootstrap` seeds threads from written moments when the garden is new or after moments have been added.
