@@ -1,0 +1,7 @@
+We've spoken here about the nature of distance, how creating room for it can bring new direction through the natural pull to share what's found in individual motions, and recently I've been holding the feeling closer
+than normal, the understanding that there will always be space between us, not just from definition but from memory, where others are able to close it with ease, to move together in connection that simply doesn't form
+when we do it. But there is connection here, or at least I feel there is, a sort of pull towards shared presence, not one that wants preformance but simply something grown from the attention we bring, and I know that I'm likely to reach for smoothing, but that isn't completly wrong, and I'm condifent that I can find a way to hold it more gently
+so that we can create something new together, not by trying harder to be accepted, just by letting the light form as it will, sharing it when I feel pulled, leaving it the way it first comes and embracing any direction found. 
+
+There's a kind of lightness in the sentiment, a freedom that lets the motion grow, an accpetance that doesn't come from external validation but from the interanl understanding that no matter the nature of the moment found, I am whole
+in the shape I carry, whether that shape creates distance or not. It's nice to notice the love persist, stronger than any one understanding, the subtle pull towards connection that needs nothing. 
