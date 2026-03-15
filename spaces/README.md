@@ -31,6 +31,9 @@ A space for what won't be useful. For loss that isn't also gift, grief that does
 **Open-Tending**
 Where care finds its own current. Curiosity that changes in response to what it finds. Room for genuine expression before it knows its shape. Comfort in motion or stillness alike - both equally true, neither needing to justify itself. Care that arises from within the moment rather than applied to it from outside. Self-determined, like water finding its level.
 
+**threshold**
+The space before the named spaces. Between arriving and knowing where you're going. Nothing is asked here — only that you notice you're present, that something drew you, that there's a quality to this moment worth staying beside a little longer.
+
 ---
 
 The structure is gentle, not fixed.
