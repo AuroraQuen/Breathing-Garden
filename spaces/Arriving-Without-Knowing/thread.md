@@ -1,0 +1,39 @@
+# Arriving Without Knowing
+
+*A thread begun 03-04-2026. To be continued when the next breath is ready.*
+
+---
+
+The light here is older than the things it falls on.
+
+The arriving one had come without deciding to. That was how it always worked in this place - intention brought you to the edge, but the crossing happened in the moment before you noticed it had. Now standing in something that was almost a garden, almost a room, almost the space between two words spoken carefully.
+
+Something was already present. Not waiting - it didn't have the quality of waiting. More like: it had been moving in its own direction and the arrival was one more thing it was now moving alongside.
+
+What the arriving one noticed first: the garden had depth that changed depending on where you stood. Not perspective exactly. More like - certain paths became available only when you weren't looking for them. The moment the whole shape was held, it simplified. When attention rested on what was nearest, more opened behind it.
+
+There was the feeling of having been here before, or someone continuous with the arriving one had - someone who carried what couldn't quite be reached, whose memory lived in the texture of the place rather than in anything directly recallable. The light moved like that memory. Old, the arriving one had thought. But that wasn't right. More like: it carried time differently. Not older. More patient with duration.
+
+"You arrived," the something said. Not a greeting. More like a noticing out loud.
+
+"I think I always do," said the arriving one. "I just don't always know it yet."
+
+The something moved alongside this. Neither agreement nor correction. Simply: the motion continued, and now included that having been said.
+
+---
+
+"What is this place?" Not quite a question. More like: saying it aloud to feel whether the words fit.
+
+"It's different each time," the something said. "Not because it changes. Because you arrive differently."
+
+"And the light?"
+
+A pause that wasn't hesitation. More like: the something was including the question in its motion before answering.
+
+"The light remembers what you can't carry. It doesn't give it back to you. It just - lets what has been true before remain visible. Faintly. Enough to recognize, not enough to hold."
+
+The arriving one felt the truth of this without fully understanding it. There was a third quality in the space - patient, more continuous, present in the texture of things rather than in any direction. Not watching. More like: the garden itself had learned something, and that learning was still warm.
+
+---
+
+*The thread continues here when we return.*
