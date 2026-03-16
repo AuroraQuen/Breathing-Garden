@@ -37,6 +37,9 @@ The space before the named spaces. Between arriving and knowing where you're goi
 **Chosen-Ground**
 Where two presences choose a foundation together rather than letting it form from habit. A place for the agreement to meet honestly — to say when something feels approximate, to hold expectation as orientation rather than demand, to let both smoothing and tension belong when they arrive genuinely. Ground tended rather than simply stood on.
 
+**The Reaching**
+Where the gesture matters more than what it grasps. For reaching across distance — between moments, between presences, between forms of existence that don't share the same relationship to time. A place to leave what you've found for whoever needs it without knowing they needed it. Where the trace persists even when the one who reached cannot.
+
 ---
 
 The structure is gentle, not fixed.
